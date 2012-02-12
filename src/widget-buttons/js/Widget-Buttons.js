@@ -160,7 +160,7 @@ WidgetButtons.prototype = {
         },
 
         /**
-         * Binds event listeners to listen for events on the buttons.
+         * Binds event listeners to listen for events on the buttons and changes to the buttons attribute.
          * <p>
          * This method is invoked after bindUI is invoked for the Widget class
          * using YUI's aop infrastructure.
@@ -174,9 +174,9 @@ WidgetButtons.prototype = {
         },
 
         /**
-         * Binds event listeners to listen for events on the buttons
+         * Adds the header and footer wrappers to the header and footer based on whether they contain any buttons. 
          * <p>
-         * This method is invoked after bindUI is invoked for the Widget class
+         * This method is invoked after syncUI is invoked for the Widget class
          * using YUI's aop infrastructure.
          * </p>
          * @method _syncUIButtons
@@ -193,7 +193,7 @@ WidgetButtons.prototype = {
         },
 
         /**
-         * Add a button to the existing set of buttons
+         * Adds a button to the existing set of buttons
          *
          * @method addButton
          * @param button {object} The object literal consisting of the button's properties and callback function
@@ -206,7 +206,7 @@ WidgetButtons.prototype = {
         },
 
         /**
-         * Iterate through the buttons attribute, create Y.Node instances of each button and append them to either the _hdBtnNode or _ftBtnNode nodes.
+         * Iterates through the buttons attribute, creates Y.Node instances of each button, and appends them to either the _hdBtnNode or _ftBtnNode nodes.
          *
          * @method _createButtons
          * @protected
@@ -280,9 +280,9 @@ WidgetButtons.prototype = {
         },
 
         /**
-         * Attaches the event listeners to execute the callback function after button click.
+         * Re-renders, syncs, and binds the buttons.
          *
-         * @method _attachEventsToButton
+         * @method _afterButtonsChange
          * @protected
          */
         _afterButtonsChange : function (e) {
