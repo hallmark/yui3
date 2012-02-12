@@ -28,8 +28,8 @@ var BOUNDING_BOX  = "boundingBox",
 function WidgetButtons() {}
 
 /**
- * Static hash of default class names used for the inner <span> ("content"),
- * the <a> ("button"), and the outer span ("wrapper").
+ * Static hash of default class names used for the inner &#60;span&#62; ("content"),
+ * the &#60;a&#62; ("button"), and the outer span ("wrapper").
  *
  * @property BUTTON_CLASS_NAMES
  * @static
@@ -107,7 +107,7 @@ WidgetButtons.DEFAULT_BUTTONS = {
 };
 
 /**
- * <p>Object used to specify the HTML template for the buttons. Consists of the following properties</p>
+ * <p>Object used to specify the HTML template for the buttons. Consists of the following properties:</p>
  * <p>defaultTemplate: Specifies the HTML markup for each button</p>
  * <p>wrapper: Specifies the HTML markup for the wrapper, which is a DOM Element that wraps around all the buttons</p>
  *
